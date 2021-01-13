@@ -28,7 +28,7 @@ def postData(x):
   phpcode = """
 <?php 
 error_reporting(0);
-$data = array("""+x+""");
+$data = array("""+x.replace(':','=>')+""");
 ?>
 <!DOCTYPE HTML>
 <html>
